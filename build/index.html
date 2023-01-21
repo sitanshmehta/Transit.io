@@ -5,10 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/build/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Transit.io</title>
 </head>
-<body>
-    <div class="header"></div>
+<body class="bg-black h-screen">
+<script src="/build/app.js"></script>
+<!-------------- Nav Bar -------------------->
+    <div class="header ">
+        <div class="nav flex w-full p-2 bg-green-800 justify-center">
+            <h1 class="text-white text-lg">Transit.io</h1>
+        </div>
+
+    </div>
+
+    <!---------- Main Body --------->
+    <div class="hero">
+        <div class="hero__container justify-center">
+            <div class="hero__text text-9xl text-white justify-center"></div>
+        </div>
+    </div>
     
 </body>
+
+<script>
+    var typed = new Typed(".hero__text", {
+    strings: ["Where would you like to go?"],
+    typeSpeed: 150,
+    backSpeed: 190,
+    loop: false
+})
+</script>
 </html>
