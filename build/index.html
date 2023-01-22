@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/build/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        
+    </style>
     <title>Transit.io</title>
 </head>
+
 <body class="bg-black h-screen">
 <script src="/build/app.js"></script>
 <!-------------- Nav Bar -------------------->
@@ -25,7 +29,8 @@
             <input type="text">
         </div>
     </div>
-    
+    <h3>Choose</h2>
+    <div id="map"> </div>
 </body>
 
 <script>
@@ -36,4 +41,8 @@
     loop: false
 })
 </script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw93Nxz_O3Iu3MIXvd0IqJeIx5paRgbB0&callback=initMap"
+      defer
+    ></script>
 </html>
